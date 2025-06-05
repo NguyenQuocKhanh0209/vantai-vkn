@@ -1,0 +1,105 @@
+
+body { font-family: Arial, sans-serif; }
+
+h2 { font-weight: bold; }
+
+#By{
+    color: orangered;
+}
+
+.navbar {
+  background-color: #1A1828 !important;
+  padding: 5px 0 !important;
+}
+.navbar-brand {
+    padding: 0 !important;
+    margin: 0 !important; /* Loại bỏ margin mặc định */
+    line-height: 1; /* Đảm bảo không có khoảng cách dòng */
+}
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
+    cursor: default !important; /* Giữ con trỏ mũi tên mặc định */
+    position: static !important; /* Loại bỏ thay đổi vị trí khi hover */
+    transform: none !important; /* Loại bỏ hiệu ứng dịch chuyển */
+}
+
+.nav-item .nav-link {
+    padding: 5px 15px !important;
+    color: #ffffff
+}
+
+.swiper.hero-slide {
+    height: 500px; /* Đặt chiều cao mong muốn, ví dụ 500px */
+}
+.swiper-slide img {
+    height: 100%; /* Ảnh chiếm toàn bộ chiều cao của slider */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo, tự cắt nếu cần */
+}
+
+.top-bar {
+    background-color: #1F62A9;
+    padding: 8px 0;
+    font-size: 14px;
+}
+.contact-list, .social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+.contact-list {
+    justify-content: flex-start;
+}
+.social-list {
+    justify-content: flex-end;
+}
+.contact-list li a, .social-list li a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+.contact-list li a:hover, .social-list li a:hover {
+    color: #cccccc !important;
+}
+
+
+/* Slider */
+.swiper.hero-slide {
+    height: 500px;
+    position: relative;
+    overflow: hidden; /* Cắt bỏ viền mờ */
+}
+.swiper-slide {
+    overflow: hidden; /* Đảm bảo container không hiển thị viền thừa */
+}
+.swiper-slide img {
+    height: 100%;
+    width: 100%; /* Đảm bảo ảnh lấp đầy */
+    object-fit: cover;
+    filter: blur(3px); /* Làm mờ ảnh */
+    transform: scale(1.05); /* Phóng to ảnh để bù cho phần mờ */
+}
+.slide-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Thêm bóng cho chữ */
+}
+
+/*logo*/
+.logo-img {
+    transform: scale(1.1); /* Phóng to ảnh để bù cho phần mờ */
+    height: 100px; /* Kích thước ban đầu */
+    transition: transform 0.3s ease; /* Hiệu ứng mượt mà */
+    display: block; /* Đảm bảo logo không bị ảnh hưởng bởi dòng */
+}
+.logo-img:hover {
+    transform: scale(1.2); /* Phóng to 120% khi hover */
+}
